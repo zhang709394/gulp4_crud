@@ -1,0 +1,83 @@
+<div class="easyui-layout">
+    <div data-options="region:'north'">
+        <input id="ss"></input>
+        <div id="mm" style="width:120px">
+            <div data-options="name:'course_name',iconCls:'icon-ok'">课程名</div>
+            <div data-options="name:'author',iconCls:'icon-man'">作者</div>
+            <div data-options="name:'college',iconCls:'icon-add'">大学</div>
+        </div>
+    </div>
+
+    <div data-options="region:'center'">
+        <table id="coursett"></table>
+    </div>
+</div>
+
+<!-- 修改的弹出层 -->
+<div id="edit_dialog" style="display: none;">
+    <!-- <form id="frmEdit">
+        <table>
+            <tr>
+                <td>课程名</td>
+                <td><input type="text" name="course_name" id="course_name" value="{{course_name}}"></td>
+            </tr>
+            <tr>
+                <td>作者</td>
+                <td><input type="text" name="author" id="author" value="{{author}}"></td>
+            </tr>
+            <tr>
+                <td>大学</td>
+                <td><input type="text" name="college" id="college" value="{{college}}"></td>
+            </tr>
+            <tr>
+                <td>分类</td>
+                <td>
+                    <select name="category_Id" id="category_Id" value="{{category_Id}}">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form> -->
+</div>
+
+<!-- 添加课程对话框 -->
+<div id="add_dialog" style="display: none;">
+    <form id="frmAdd">
+        <table>
+            <tr>
+                <td>课程名</td>
+                <td><input type="text" name="course_name" class="course_name"></td>
+            </tr>
+            <tr>
+                <td>作者</td>
+                <td><input type="text" name="author" class="author"></td>
+            </tr>
+            <tr>
+                <td>大学</td>
+                <td><input type="text" name="college" class="college"></td>
+            </tr>
+            <tr>
+                <td>分类</td>
+                <td>
+                    <select name="category_Id" class="category_Id">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<!-- 双击弹出详情 -->
+<div class="info-dialog">
+</div>
+</div>
